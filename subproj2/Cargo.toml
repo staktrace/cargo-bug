@@ -1,0 +1,10 @@
+[package]
+name = "subproj2"
+version = "0.1.0"
+authors = ["Kartikaya Gupta <kgupta@mozilla.com>"]
+
+[dependencies]
+subproj1 = { path = "../subproj1", optional = true }
+
+[features]
+pull_one = ["subproj1"]
